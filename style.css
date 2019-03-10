@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.mod-tab .header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mod-tab .header .tab {
+    float: left;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background: #ddd;
+    cursor: pointer;
+    width: 100px;
+    padding: 5px 20px;
+}
+
+.mod-tab .header .tab:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.mod-tab .header .active {
+    background: #fff;
+    display: block;
+}
+
+.mod-tab .content {
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+}
+
+.mod-tab .content .panel {
+    display: none;
+    padding: 30px;
+}
+
+.mod-tab .content .panel.active {
+    display: block;
+}
